@@ -8,12 +8,12 @@
 (setq dotfiles-dir (file-name-directory (or load-file-name (buffer-file-name))))
 
 (add-to-list 'load-path (expand-file-name
-                         "lisp" (expand-file-name
-                                 "org" (expand-file-name
-                                        "src" dotfiles-dir))))
+                        "org" dotfiles-dir))
 ;; Load up Org Mode and Babel
 (require 'org-install)
-
+(require 'ob)
+(require 'ob-emacs-lisp)
+(require 'ob-tangle)
 ;; load up the main file
 (org-babel-load-file (expand-file-name "starter-kit.org" dotfiles-dir))
 
