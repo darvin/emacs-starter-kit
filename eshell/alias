@@ -4,3 +4,9 @@ alias emaccs emacs $*
 alias emacsc emacs $*
 alias emasc emacs $*
 alias emamcs emacs $*
+alias vim emacs $*
+alias vi emacs $*
+alias open emacs $*
+alias edit emacs $*
+alias openo find-file-other-window $*
+alias clear recenter 0
