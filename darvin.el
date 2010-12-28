@@ -14,6 +14,8 @@
 
 ;(safe-wrap 
  ; (set-face-attribute 'default nil :font "Consolas-15"))  
+(require 'ido)
+
 
 (scroll-bar-mode -1)
 
@@ -46,9 +48,9 @@
       browse-url-generic-program "google-chrome")
 
 
-(require 'icicles)
+;(require 'icicles)
 
-(icy-mode 1)
+;(icy-mode 1)
 
 
 
@@ -63,19 +65,7 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
 
- '(highlight ((t (:background "#333"))))
- '(icicle-Completions-instruction-1 ((((background dark)) (:foreground "seagreen2"))))
- '(icicle-Completions-instruction-2 ((t (:foreground "darkseagreen1"))))
- '(icicle-common-match-highlight-Completions ((t (:foreground "OliveDrab3"))))
- '(icicle-complete-input ((((background dark)) (:foreground "OliveDrab1"))))
- '(icicle-match-highlight-Completions ((t (:foreground "OliveDrab1"))))
- '(icicle-prompt-suffix ((((type x w32 mac graphic) (class color) (background dark)) (:foreground "goldenrod2"))))
- '(icicle-special-candidate ((((background dark)) (:inherit default :underline "goldenrod1"))))
 
- '(italic ((((supports :slant italic)) (:slant italic :width expanded))))
- '(match ((t (:underline "red"))))
- '(flymake-errline  ((((class color)) (:underline "OrangeRed"))))
- '(flymake-warnline ((((class color)) (:underline "Yellow"))))
  )
 
 
