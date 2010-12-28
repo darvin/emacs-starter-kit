@@ -1,0 +1,6 @@
+[submodule "el-get/el-get"]
+	path = el-get/el-get
+	url = git@github.com:darvin/el-get.git
+[submodule "el-get/docstring-mode"]
+	path = el-get/docstring-mode
+	url = git@github.com:darvin/docstring-mode.git

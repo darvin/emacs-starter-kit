@@ -14,8 +14,6 @@
 
 ;(safe-wrap 
  ; (set-face-attribute 'default nil :font "Consolas-15"))  
-(require 'ido)
-
 
 (scroll-bar-mode -1)
 
@@ -46,30 +44,5 @@
 ;; browser default
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "google-chrome")
-
-
-;(require 'icicles)
-
-;(icy-mode 1)
-
-
-
-
-
-;;
-;; M-x customize
-;; 
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
-
-
- )
-
-
-
-
 
 
