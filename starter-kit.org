@@ -258,11 +258,12 @@ This section contains all code implementing the Emacs Starter Kit.
                       (or load-file-name (buffer-file-name))))
   
   (add-to-list 'load-path dotfiles-dir)
-  (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit"))
-  (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit/jabber"))
+;  (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit"))
+;  (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit/jabber"))
   
   (setq autoload-file (concat dotfiles-dir "loaddefs.el"))
-  (setq package-user-dir (concat dotfiles-dir "elpa"))
+;  (setq package-user-dir (concat dotfiles-dir "elpa"))
+;  (setq package-user-dir (concat dotfiles-dir "el-get"))
   (setq custom-file (concat dotfiles-dir "custom.el"))
 #+end_src
 
@@ -325,18 +326,30 @@ backport some functionality to Emacs 22 if needed
                (list (concat dotfiles-dir user-login-name) dotfiles-dir))))))
 #+end_src
 
+
 *** ELPA (Emacs Lisp Package Manager)
 
 Load up [[http://tromey.com/elpa/][ELPA]], the Emacs Lisp package manager
 
 #+srcname: starter-kit-elpa
 #+begin_src emacs-lisp 
-  (require 'package)
-  (add-to-list 'package-archives '("original" . "http://tromey.com/elpa/"))
-  (add-to-list 'package-archives
-               '("technomancy" . "http://repo.technomancy.us/emacs/") t)
-  (package-initialize)
-  (starter-kit-load "starter-kit-elpa.org")
+ ; (require 'package)
+ ; (add-to-list 'package-archives '("original" . "http://tromey.com/elpa/"))
+ ; (add-to-list 'package-archives
+ ;              '("technomancy" . "http://repo.technomancy.us/emacs/") t)
+ ; (package-initialize)
+ ; (starter-kit-load "starter-kit-elpa.org")
+#+end_src
+
+
+
+*** El-get
+
+Load up el-get
+
+#+srcname: starter-kit-elpa
+#+begin_src emacs-lisp 
+  (require 'el-get-init)
 #+end_src
 
 *** Work around OS X bug

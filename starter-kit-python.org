@@ -34,8 +34,8 @@ In your personal configuration, add something like this to use IPython:
 
 ** Use Cython mode
 #+begin_src emacs-lisp
-(require 'cython-mode)
-(add-to-list 'auto-mode-alist '("\\.pyx\\'" . cython-mode))
-(add-to-list 'auto-mode-alist '("\\.pxd\\'" . cython-mode))
-(add-to-list 'auto-mode-alist '("\\.pxi\\'" . cython-mode))
+;(require 'cython-mode)
+;(add-to-list 'auto-mode-alist '("\\.pyx\\'" . cython-mode))
+;(add-to-list 'auto-mode-alist '("\\.pxd\\'" . cython-mode))
+;(add-to-list 'auto-mode-alist '("\\.pxi\\'" . cython-mode))
 #+end_src

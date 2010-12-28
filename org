@@ -1,1 +1,1 @@
-src/org/lisp/
+el-get/org-mode/lisp/
