@@ -1,12 +1,12 @@
 loaddefs.el*
 backups/*
 auto-save-list
-custom.el
+/custom.el
 *elc
 places
 url/cookies
-elpa-to-submit/jabber/jabber.info
-elpa-to-submit/nxhtml/etc/schema/xhtml-loader.rnc
+/elpa-to-submit/jabber/jabber.info
+/elpa-to-submit/nxhtml/etc/schema/xhtml-loader.rnc
 thumbs/*
 oddmuse/*
 mail
@@ -16,19 +16,19 @@ mail
 .svn
 .DS_Store
 image-dired/
-elim/
-elpa-to-submit/nxhtml/etc/schema/xhtml-loader.rnc~
-tramp
+/elim/
+/elpa-to-submit/nxhtml/etc/schema/xhtml-loader.rnc~
+/tramp
 
 ## exported files
-*el
-starter-kit*html
-doc
-eshell/lastdir
-eshell/history
+/starter-kit*el
+/starter-kit*html
+/doc
+/eshell/lastdir
+/eshell/history
 
 ## ignore packages held in the src directory
-src
+/src
 
 ## org stuff
 .org-id-locations
