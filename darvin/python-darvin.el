@@ -13,20 +13,15 @@
 
 
 
-
-
-(require 'linum)
-(require 'pycomplexity)
 (require 'doc-mode)
 (add-hook 'python-mode-hook
            (function (lambda ()
                        (flymake-mode)
                        (turn-on-eldoc-mode) 
                        (set (make-local-variable 'eldoc-documentation-function) 
-                            #'rope-eldoc-function) 
-                       (linum-mode)
-                       (pycomplexity-mode)
-                       (doc-mode))))
+                            #'rope-eldoc-function)
+                       (doc-mode)
+                       )))
 
 (when (load "flymake" t)
       (defun flymake-pylint-init ()

@@ -5,7 +5,7 @@
 (setq el-get-sources
       '(el-get
         package
-        (:name paredit :features "paredit")
+        paredit
         google-maps
         yasnippet
         gist
@@ -25,39 +25,26 @@
         emms
         markdown-mode
         hexrgb
-        
-        (:name fullscreen       :type emacswiki :features "fullscreen" :load "fullscreen.el"
-         :after (lambda () (global-set-key [f11] 'fullscreen-toggle)))
-
+        fullscreen
         palette
-
         sudo-save
         eldoc-extension
-
         cat-safe
-        
-
         pycomplexity
-        
-        (:name ipython   :type http
-         :url "http://ipython.scipy.org/dist/ipython.el"
-         :features "ipython")
-
-
-        
+        ipython
         frame-fns
         frame-cmds
-        
         zoom-frm                             
-        
-
         zenburn
-
         idle-highlight
         inf-ruby
         js2-mode
         ruby-mode
-        
+        git-commit
+        docstring-mode
+        highlight-parentheses
+        emacschrome
+        smex
                 
         
         
@@ -72,13 +59,7 @@
         (:name magit
          :after (lambda () (global-set-key (kbd "C-x C-z") 'magit-status)))
 
-        git-commit
-        
-        docstring-mode
 
-        highlight-parentheses
-
-        emacschrome
 
 
         ))

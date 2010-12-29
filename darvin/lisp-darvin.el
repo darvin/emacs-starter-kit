@@ -1,6 +1,8 @@
 (setq inferior-lisp-program "sbcl")
-(require 'slime-autoloads)
+(add-to-list 'load-path "~/.emacs.d/el-get/slime/")
+(require 'slime)
 (slime-setup '(slime-fancy))
+
 (setq lisp-indent-function 'common-lisp-indent-function)
 (setq common-lisp-hyperspec-root "/home/darvin/opt/HyperSpec/")
 (dolist (hook '(lisp-mode-hook
